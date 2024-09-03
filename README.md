@@ -1,10 +1,8 @@
 # gergelations
 
 gergelations is a mod for [_The Binding of Isaac: Repentance_](https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/), written in [TypeScript](https://www.typescriptlang.org/) using the [IsaacScript](https://isaacscript.github.io/) framework.
+it currently only adds a single item to the game called "Green Candle" which is a new item added to the treasure item pool.
 
-## How To Play
-
-For normal people, you can play the mod by subscribing to it on [the Steam Workshop](https://steamcommunity.com/app/250900/workshop/). (Subscribing to the mod will automatically download and install it once you launch the game.)
 
 ## How To Compile
 
