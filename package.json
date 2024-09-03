@@ -1,0 +1,36 @@
+{
+  "name": "gergelations",
+  "version": "0.0.0",
+  "description": "A mod for The Binding of Isaac: Repentance.",
+  "keywords": [
+    "isaac",
+    "mod",
+    "rebirth",
+    "afterbirth",
+    "repentance"
+  ],
+  "license": "GPL-3.0",
+  "type": "module",
+  "scripts": {
+    "build": "tstl",
+    "lint": "tsx ./scripts/lint.ts",
+    "nuke": "isaacscript nuke",
+    "publish": "isaacscript publish",
+    "start": "isaacscript monitor",
+    "update": "isaacscript update"
+  },
+  "dependencies": {
+    "isaac-typescript-definitions": "^42.2.0",
+    "isaacscript-common": "^87.5.0"
+  },
+  "devDependencies": {
+    "isaacscript": "^4.5.3",
+    "isaacscript-common-node": "^4.0.6",
+    "isaacscript-lint": "^6.4.1",
+    "isaacscript-spell": "^1.15.0",
+    "isaacscript-tsconfig": "^5.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "5.5.2",
+    "typescript-to-lua": "^1.26.2"
+  }
+}
