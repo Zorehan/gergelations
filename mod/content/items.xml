@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<items gfxroot="gfx/items" version="1">
-  <passive
-  description="Mass poison"
-  gfx="green-candle.png"
-  name="Green Candle"
-  />
+<items gfxroot="gfx/items/" version="1">
+  <passive description="Mass poison" gfx="green-candle.png" name="Green Candle" />
+  <familiar description ="He's plundering" gfx="angelic-baby.png" name="Angelic Baby" />
 </items>
