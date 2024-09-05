@@ -2,7 +2,7 @@
   <Info CreatedBy="Zorehan" CreatedOn="5/09/2024 8:47:20 AM" Version="105" Fps="30"/>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="entities\angelicbaby.png" Id="0"/>
+      <Spritesheet Path="entities\angelic-baby.png" Id="0"/>
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0"/>
