@@ -1,4 +1,4 @@
-import { ModCallback, type FamiliarVariant } from "isaac-typescript-definitions";
+import { ModCallback, CacheFlag, EntityType, NullItemID,} from "isaac-typescript-definitions";
 import { getNPCs, getPlayers, getRandomInt, ModCallbackCustom } from "isaacscript-common";
 
 const MOD_NAME = "Gergelations";
@@ -15,16 +15,18 @@ let entities: Entity[] = [];
 
 let chestPickupCount = 0;
 
-const playerDistance = 90;
+const DISTANCE_AWAY_FROM_PLAYER = 90;
 const pickupDistance = 150;
 const collisionDistance = 30;
+
+const SPIN_TO_WIN_ROTATION_MULTIPLIER = 10;
 
 let modRunning = false;
 
 
 export function main() {
   const mod = RegisterMod(MOD_NAME, 1);
-
+  mod.AddCallback(ModCallback.POST_FAMILIAR_UPDATE, FamiliarVariant.ANGELIC_BABY_VARIAT)
   mod.AddCallback(ModCallback.POST_UPDATE, postUpdate);
   mod.AddCallback(ModCallback.POST_UPDATE, postUpdateforAngelicBaby);
   mod.AddCallback(ModCallback.POST_FAMILIAR_UPDATE(angelicbabyUpdate, ANGELIC_BABY_VARIANT))
